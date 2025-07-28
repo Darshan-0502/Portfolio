@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darshan's Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- DARK MODE -->
+    <button
+      id="darkModeToggle"
+      class="btn btn-dark position-fixed bottom-0 end-0 m-4"
+    >
+      🌙 Dark Mode</button
+    ><!-- DARK MODE -->
+    <!-- SEARCH SCROLL -->
+    <div
+      class="navigation-buttons position-fixed bottom-0 start-50 translate-middle-x mb-4"
+    >
+      <button id="prevBtn" class="btn btn-primary me-2" disabled>
+        Previous
+      </button>
+      <button id="nextBtn" class="btn btn-primary" disabled>Next</button>
+    </div>
+    <!-- SEARCH SCROLL -->
+    <header data-bs-theme="dark">
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top bg-dark py-0 ps-3"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand mb-1" href="#">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active header" aria-current="page" href="#"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header" href="#edu">Qualification</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header" href="#skills">Skills Acquired</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header" href="#album">Projects</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" id="searchForm">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="searchInput"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+            <img
+              src="images/profile.jpg"
+              height="50"
+              alt=""
+              class="rounded-circle ps-3 pe-3"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div id="content">
+      <div class="d-flex h-100 text-center text-bg-dark toppart">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+          <main class="px-3">
+            <h1 class="intro">👋 Hi, I'm Darshan</h1>
+            <br />
+            <p class="lead">
+              Welcome to my portfolio! I’m an aspiring Software Engineer with a
+              passion for learning and building practical, real-world projects.
+              Here, you’ll find my academic work, personal projects, and growing
+              skills in software development. As I continue to explore and
+              improve, I’m excited to share my journey with you. Thanks for
+              stopping by.<br /><br />
+            </p>
+            <p class="lead">
+              <a
+                href="#about"
+                class="btn btn-lg btn-light fw-bold border-white bg about_button"
+                >Click to Know More</a
+              >
+            </p>
+          </main>
+          <footer class="mt-auto text-white-50">
+            <p></p>
+          </footer>
+        </div>
+        <script
+          src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+          class="astro-vvvwv3sm"
+        ></script>
+      </div>
+      <div class="container marketing pt-5" id="shortcut">
+        <!-- Three columns of text below the carousel -->
+        <div class="row text-center" id="about">
+          <div class="col-lg-4">
+            <svg
+              width="140"
+              height="140"
+              fill="currentColor"
+              class="bd-placeholder-img shortcuts"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5M12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0M1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25"
+              />
+            </svg>
+            <h2 class="fw-normal">Projects</h2>
+            <p>
+              Explore my collection of projects showcasing creativity,
+              problem-solving, and technical skills. Each one reflects a journey
+              of learning and innovation.
+            </p>
+            <p><a class="btn btn-secondary" href="#album">View details »</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="140"
+              height="140"
+              fill="currentColor"
+              class="bd-placeholder-img shortcuts"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.007 4.097q.011-.146.027-.298c.05-.464.141-.979.313-1.45.169-.465.432-.933.853-1.249 1.115-.836 2.485-.836 3.6 0 .42.316.684.784.853 1.25.171.47.263.985.313 1.449q.016.15.027.298c1.401.194 2.65.531 3.525 1.012 2.126 1.169 1.446 6.095 1.089 8.018a.954.954 0 0 1-.95.772H1.343a.954.954 0 0 1-.95-.772c-.357-1.923-1.037-6.85 1.09-8.018.873-.48 2.123-.818 3.524-1.012M4.05 5.633a22 22 0 0 0-1.565.352l-.091.026-.034.01a.5.5 0 0 0 .282.959l.005-.002.02-.005.08-.023a21 21 0 0 1 1.486-.334A21 21 0 0 1 8 6.25c1.439 0 2.781.183 3.767.367a21 21 0 0 1 1.567.356l.02.005.004.001a.5.5 0 0 0 .283-.959h-.003l-.006-.002-.025-.007a15 15 0 0 0-.43-.113 22 22 0 0 0-1.226-.265A22 22 0 0 0 8 5.25c-1.518 0-2.926.192-3.95.383M6.8 1.9c-.203.153-.377.42-.513.791a5.3 5.3 0 0 0-.265 1.292 35 35 0 0 1 1.374-.076c.866-.022 1.742.003 2.584.076a5.3 5.3 0 0 0-.266-1.292c-.135-.372-.309-.638-.513-.791-.76-.57-1.64-.57-2.4 0Z"
+              />
+            </svg>
+            <h2 class="fw-normal">Education</h2>
+            <p>
+              Discover my academic journey built on a strong foundation of
+              knowledge and curiosity. Each milestone reflects growth,
+              dedication, and a passion for learning.
+            </p>
+            <p><a class="btn btn-secondary" href="#edu">View details »</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="140"
+              height="140"
+              fill="currentColor"
+              class="bd-placeholder-img shortcuts"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"
+              />
+            </svg>
+            <h2 class="fw-normal">Skills</h2>
+            <p>
+              Explore a diverse set of skills developed through hands-on
+              experience and continuous learning. Each one reflects my
+              commitment to excellence and adaptability.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#skills">View details »</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+      </div>
+      <!-- /.container -->
+      <hr class="featurette-divider" id="album" />
+      <!-- Projects -->
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <h2 class="pb-2 border-bottom text-center">Projects</h2>
+          <br /><br />
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="project_titles">TinDog</h5>
+                <img src="images/tindog.png" alt="" class="project_thumbnail" />
+                <div class="card-body">
+                  <p class="card-text">
+                    TinDog is a fun, static website inspired by Tinder—made for
+                    dogs to find friends. Built with HTML, CSS, and Bootstrap,
+                    it showcases responsive design and clean UI.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        href="https://darshan-0502.github.io/TinDog/"
+                        target="_blank"
+                      >
+                        View
+                      </a>
+                      <a
+                        href="https://github.com/Darshan-0502/TinDog"
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        target="_blank"
+                      >
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="project_titles">Dice Duel</h5>
+                <img src="images/dice.png" alt="" class="project_thumbnail" />
+                <div class="card-body">
+                  <p class="card-text">
+                    A fun dice game where two players roll the dice, and the
+                    higher number wins. Built with HTML, CSS, and JavaScript, it
+                    updates dice visuals and displays the winner instantly.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://darshan-0502.github.io/Dice-Game/"
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        target="_blank"
+                      >
+                        View
+                      </a>
+                      <a
+                        href="https://github.com/Darshan-0502/Dice-Game"
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        target="_blank"
+                      >
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="project_titles">Virtual Drum Kit</h5>
+                <img src="images/drum.png" alt="" class="project_thumbnail" />
+                <div class="card-body">
+                  <p class="card-text">
+                    An interactive drum kit that plays sounds when buttons are
+                    clicked or keys are pressed. Built with HTML, CSS, and
+                    JavaScript to create a responsive and fun user experience.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://darshan-0502.github.io/Drum-Kit/"
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        target="_blank"
+                      >
+                        View
+                      </a>
+                      <a
+                        href="https://github.com/Darshan-0502/Drum-Kit"
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        target="_blank"
+                      >
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="project_titles">Simon</h5>
+                <img src="images/simon.png" alt="" class="project_thumbnail" />
+                <div class="card-body">
+                  <p class="card-text">
+                    A memory-based game where players repeat an increasing
+                    sequence of lights and sounds. Built with HTML, CSS, and
+                    JavaScript to test focus, timing, and pattern recognition.
+                    <span style="color: red; font-style: italic"
+                      >(Use it in desktop)</span
+                    >
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://darshan-0502.github.io/Simon-Game/"
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        target="_blank"
+                      >
+                        View
+                      </a>
+                      <a
+                        href="https://github.com/Darshan-0502/Simon-Game"
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        target="_blank"
+                      >
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Of Projects -->
+      <hr class="featurette-divider" id="edu" />
+      <!-- EDUCATION -->
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Education and Qualification</h2>
+        <div
+          class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"
+        >
+          <div class="col d-flex flex-column align-items-start gap-2">
+            <h2 class="fw-bold text-body-emphasis">
+              Let’s Work Together – Download My Resume
+            </h2>
+            <p class="text-body-secondary">
+              Get a clear view of my experience, skills, and accomplishments.
+              Download my resume to see how I can bring value to your team or
+              project.
+            </p>
+            <a
+              href="Resume/Resume-Darshan .pdf"
+              class="btn btn-dark btn-lg"
+              target="_blank"
+              >Download Resume</a
+            >
+          </div>
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M3 9.5L12 4l9 5.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"
+                    />
+                    <path d="M9 22V12h6v10" />
+                    <path d="M12 4v2" />
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">School</h4>
+                <p class="text-body-secondary">
+                  Attended
+                  <span style="font-weight: bolder; font-style: italic"
+                    >Kendriya Vidyalaya Hebbal</span
+                  >
+                  from 1st to 10th grade (2008–2018), completing
+                  <span style="font-weight: bold"> Secondary education </span>
+                  with a well-rounded academic background.
+                </p>
+              </div>
+              <div class="col d-flex flex-column gap-2">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="5" y="6" width="14" height="14" rx="2" />
+                    <path d="M8 6V4a4 4 0 0 1 8 0v2" />
+                    <path d="M8 14h8" />
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">
+                  Pre University
+                </h4>
+                <p class="text-body-secondary">
+                  Completed
+                  <span style="font-weight: bold">Pre-University</span>
+                  education in the PCMB stream at
+                  <span style="font-weight: bolder; font-style: italic"
+                    >CMR National PU College</span
+                  >
+                  (2019–2020), building a strong foundation in science subjects.
+                </p>
+              </div>
+              <div class="col d-flex flex-column gap-2 flex-grow-1">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M22 10L12 5 2 10l10 5 10-5z" />
+                    <path d="M6 12v5a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-5" />
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">College</h4>
+                <p class="text-body-secondary">
+                  Graduated with a
+                  <span style="font-weight: bold"
+                    >Bachelor of Engineering in Electronics and
+                    Instrumentation</span
+                  >
+                  from
+                  <span style="font-weight: bolder; font-style: italic"
+                    >BMS College of Engineering</span
+                  >
+                  (2021–2024), gaining expertise in electronic systems and
+                  instrumentation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- EDUCATION -->
+      <hr class="featurette-divider" id="skills" />
+      <!-- SKILLS -->
+      <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom text-center">Skills</h2>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
+        >
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">HTML</h3>
+              <p>
+                Able to structure content effectively using semantic HTML for
+                modern web development.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#cpu-fill"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">CSS</h3>
+              <p>
+                Skilled in styling websites using CSS to create responsive and
+                visually appealing layouts.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#calendar3"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">JavaScript</h3>
+              <p>
+                Basic understanding of JavaScript to add interactivity and
+                dynamic behavior to web pages.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#home"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Python</h3>
+              <p>
+                Proficient in writing clean and efficient Python code for
+                automation and data tasks.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#speedometer2"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                Data Analysis
+              </h3>
+              <p>
+                Can perform basic data cleaning and visualization using tools
+                like Excel or Python libraries.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#toggles2"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                AI Annotation
+              </h3>
+              <p>
+                Experience in labeling and preparing datasets for machine
+                learning and AI model training.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#geo-fill"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Bootstrap</h3>
+              <p>
+                Used Bootstrap to develop a clean, responsive portfolio website
+                optimized for desktop and mobile devices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SKILLS -->
+      <hr class="featurette-divider" />
+      <!-- FOOTER -->
+      <div class="container">
+        <footer class="py-3 my-4">
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap"
+          >
+            <ul class="nav list-unstyled d-flex contact mb-0">
+              <!-- Icons (Mail & WhatsApp) -->
+              <p class="mt-1" style="font-weight: bold">Contact Me:</p>
+              <li class="ms-3">
+                <a
+                  class="text-body-secondary"
+                  href="mailto:mdarshan.off@gmail.com"
+                  aria-label="Mail"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    width="32"
+                    height="32"
+                  >
+                    <path
+                      fill="black"
+                      d="M64 96C46.3 96 32 110.3 32 128v256c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H64zm0 32h384l-192 144L64 128zm0 256V160l192 144 192-144v224H64z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-body-secondary"
+                  href="https://wa.me/919740071608"
+                  aria-label="WhatsApp"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    width="25"
+                    height="25"
+                  >
+                    <path
+                      fill="black"
+                      d="M128 0C57.3 0 0 57.3 0 128c0 22.6 6 44.7 17.3 63.9L0 256l66.4-17.2c18.2 9.8 38.6 14.9 61.6 14.9 70.7 0 128-57.3 128-128S198.7 0 128 0zm0 232.7c-20.2 0-39.8-5.4-56.9-15.6l-4-2.3-39.3 10.2 10.5-38.3-2.6-4.1c-10.6-16.5-16.2-35.6-16.2-55.6 0-57.2 46.5-103.7 103.7-103.7S231.7 70.8 231.7 128 185.2 231.7 128 231.7z"
+                    />
+                    <path
+                      fill="black"
+                      d="M190.8 151.4c-2.9-1.4-17.1-8.4-19.8-9.3-2.7-1-4.6-1.4-6.5 1.4-1.9 2.9-7.5 9.3-9.2 11.2-1.7 1.9-3.4 2.1-6.3.7-17.2-8.6-28.5-15.3-40-34.6-3-5.1 3-4.7 8.6-15.6 1-1.9.5-3.5-.2-4.9-.7-1.4-6.5-15.6-8.9-21.3-2.3-5.6-4.7-4.8-6.5-4.9-1.7 0-3.7 0-5.6 0s-4.9.7-7.5 3.5c-2.6 2.9-10 9.8-10 23.9s10.2 27.7 11.6 29.6c1.4 1.9 20 30.6 48.5 42.8 6.8 2.9 12.1 4.6 16.3 5.8 6.9 2.2 13.2 1.9 18.1 1.2 5.5-.8 17.1-7 19.5-13.8 2.4-6.7 2.4-12.5 1.7-13.7-.6-1.2-2.6-1.9-5.5-3.3z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav mb-0">
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary"
+                  >Scroll Top</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#edu" class="nav-link px-2 text-body-secondary"
+                  >Education</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link px-2 text-body-secondary"
+                  >Skills</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#album" class="nav-link px-2 text-body-secondary"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#shortcut" class="nav-link px-2 text-body-secondary"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- FOOTER -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
+</html>
