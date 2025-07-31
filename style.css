@@ -113,7 +113,7 @@ html {
 }
 
 /* PHONE */
-@media (min-width: 500px) and (max-width: 767.2px) {
+@media (min-width: 50px) and (max-width: 767.2px) {
   .header {
     margin: 3px;
   }
