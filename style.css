@@ -111,3 +111,9 @@ html {
   display: none; /* hidden by default */
   z-index: 1050; /* keep above content */
 }
+
+@media (min-width: 768px) and (max-width: 996px) {
+  .shortcutButton {
+    margin-top: 10px;
+  }
+}
