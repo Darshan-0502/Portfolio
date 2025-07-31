@@ -16,7 +16,7 @@
     <!-- DARK MODE -->
     <button
       id="darkModeToggle"
-      class="btn btn-dark position-fixed bottom-0 end-0 m-4"
+      class="btn btn-dark position-fixed bottom-0 end-0 m-1"
     >
       🌙 Dark Mode</button
     ><!-- DARK MODE -->
@@ -30,7 +30,7 @@
       <button id="nextBtn" class="btn btn-primary" disabled>Next</button>
     </div>
     <!-- SEARCH SCROLL -->
-    <header data-bs-theme="dark">
+    <header data-bs-theme="dark" class="headers">
       <nav
         class="navbar navbar-expand-md navbar-dark fixed-top bg-dark py-0 ps-3"
       >
@@ -48,20 +48,20 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0 shortcutButton">
               <li class="nav-item">
                 <a class="nav-link active header" aria-current="page" href="#"
                   >About Me</a
                 >
               </li>
               <li class="nav-item">
+                <a class="nav-link header" href="#album">Projects</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link header" href="#edu">Qualification</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link header" href="#skills">Skills Acquired</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link header" href="#album">Projects</a>
               </li>
             </ul>
             <form class="d-flex" role="search" id="searchForm">
@@ -76,12 +76,16 @@
                 Search
               </button>
             </form>
-            <img
-              src="images/profile.jpg"
-              height="50"
-              alt=""
-              class="rounded-circle ps-3 pe-3"
-            />
+            <div class="dp">
+              <div class="dp2">
+                <img
+                  src="images/profile.jpg"
+                  height="50"
+                  alt=""
+                  class="rounded-circle ps-3 pe-3"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </nav>
