@@ -112,8 +112,41 @@ html {
   z-index: 1050; /* keep above content */
 }
 
-@media (min-width: 768px) and (max-width: 996px) {
-  .shortcutButton {
-    margin-top: 10px;
+/* PHONE */
+@media (min-width: 500px) and (max-width: 767.2px) {
+  .header {
+    margin: 3px;
   }
+  .dp {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5px;
+  }
+  .dp2 {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .dp img {
+    height: 95px;
+  }
+}
+
+/* IPAD */
+@media (min-width: 767.2px) and (max-width: 994.4px) {
+  .shortcutButton {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+  }
+}
+#darkModeToggle {
+  z-index: 10;
 }
